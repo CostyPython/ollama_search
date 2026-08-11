@@ -1,0 +1,32 @@
+body {
+    width: 400px;
+    height: 500px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#responseField {
+    width: 100%;
+    min-height: 100px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.bottom-container {
+    margin-top: auto;
+
+    display: flex;
+    gap: 10px;
+}
+
+#inputField {
+    flex: 1;
+}
+
+#submitButton {
+    padding: 5px 12px;
+}
