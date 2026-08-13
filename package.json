@@ -1,0 +1,24 @@
+{
+  "name": "ollama_search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CostyPython/ollama_search.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/CostyPython/ollama_search/issues"
+  },
+  "homepage": "https://github.com/CostyPython/ollama_search#readme",
+  "dependencies": {
+    "ollama": "^0.6.3"
+  }
+}
