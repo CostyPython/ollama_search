@@ -1,4 +1,5 @@
 import * as UserInterface from "./userInterface.js";
+import * as Memory from "./memory.js";
 
 // called from button click event in userInput.js
 export async function sendQueryToOllama(query){
@@ -19,7 +20,7 @@ export async function sendQueryToOllama(query){
         messages: [
             {
                 role: "user",
-                content: query
+                content: Memory.getMemory() + "Current Query: " + query
             }
         ],
         stream: false,
@@ -33,6 +34,8 @@ export async function sendQueryToOllama(query){
     // outputResultToBox(data.message.content);
 
     UserInterface.createResponseBox(data.message.content);
+
+    Memory.appendMemory(query, data.message.content);
     
 }
 

@@ -1,3 +1,12 @@
-export function appendMemory(message, memory) {
-    memory.push(message);
+const memory = [];
+
+
+export function appendMemory(prompt, message) {
+    memory.push(prompt + " " + message);
 }
+
+export function getMemory(){
+    return memory;
+}
+
+
