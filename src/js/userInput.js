@@ -1,4 +1,5 @@
 import * as Ollama from "./ollama.js";
+import * as UserInterface from "./userInterface.js";
 
 
 var userQuery = "";
@@ -23,6 +24,7 @@ function takeUserInput(){
     if (userQuery != ""){
         Ollama.sendQueryToOllama(userQuery);
     }
+
 }
 
 export function getUserQuery(){

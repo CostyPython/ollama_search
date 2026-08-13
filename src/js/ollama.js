@@ -30,7 +30,10 @@ export async function sendQueryToOllama(query){
     const data = await response.json();
 
     console.log(data.message.content);
-    outputResultToPopup(data.message.content);
+    // outputResultToBox(data.message.content);
+
+    UserInterface.createResponseBox(data.message.content);
+    
 }
 
 
@@ -48,8 +51,8 @@ export async function unloadModel() {
 }
 
 
-export function outputResultToPopup(result){
-    const resultContainer = document.getElementById("responseField");
+export function outputResultToBox(result){
+    const resultContainer = document.getElementById("responseBox");
     resultContainer.textContent = result;
     UserInterface.autoResize();
 }
