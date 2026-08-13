@@ -17,6 +17,8 @@ function takeUserInput(){
     userQuery = document.getElementById("inputField").value;
     console.log("User input: " + userQuery);
 
+    document.getElementById("inputField").value = "";
+
     // queries ollama
     if (userQuery != ""){
         Ollama.sendQueryToOllama(userQuery);
