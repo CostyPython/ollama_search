@@ -1,8 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "My Chrome Extension",
+  "name": "Ollama Search",
   "version": "1.0",
-  "description": "My extension",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://localhost:11434/*"
+  ],
   "action": {
     "default_popup": "src/html/popup.html"
   }
