@@ -1,3 +1,4 @@
+import * as UserInterface from "./userInterface.js";
 
 // called from button click event in userInput.js
 export async function sendQueryToOllama(query){
@@ -50,5 +51,6 @@ export async function unloadModel() {
 export function outputResultToPopup(result){
     const resultContainer = document.getElementById("responseField");
     resultContainer.textContent = result;
+    UserInterface.autoResize();
 }
 
